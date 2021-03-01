@@ -1,0 +1,72 @@
+{
+  "name": "nodejs-boilerplate",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "author": "ITM",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "babel-node": "babel-node",
+    "dev": "nodemon --exec npm run babel-node -- ./src/index.js",
+    "test": "mocha --require @babel/register src/**/*.test.js",
+    "lint": "eslint ./src/ --ignore-path .eslintignore",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "core-js": "^2.6.11",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "es6-error": "^4.1.1",
+    "express": "^4.17.1",
+    "express-useragent": "^1.0.15",
+    "express-validation": "^3.0.6",
+    "express-validator": "^6.6.0",
+    "firebase-admin": "^9.4.1",
+    "format-thousands": "^2.0.0",
+    "http-status": "^1.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "node-fetch": "^2.6.1",
+    "node-schedule": "^1.3.2",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.5.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/eslint-parser": "^7.11.4",
+    "@babel/eslint-plugin": "^7.11.3",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/register": "^7.10.5",
+    "chai": "^4.2.0",
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-mocha": "^7.0.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "import-sort-style-module": "^6.0.0",
+    "mocha": "^8.1.2",
+    "prettier": "^2.1.1",
+    "prettier-plugin-import-sort": "0.0.4"
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "module"
+    }
+  }
+}
