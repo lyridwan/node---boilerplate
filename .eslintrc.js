@@ -16,10 +16,12 @@ module.exports = {
   plugins: ['prettier', 'mocha'],
   rules: {
     'prettier/prettier': ['error'],
+    'global-require': 0,
     'import/no-extraneous-dependencies': 0,
     'import/named': 0,
     'import/prefer-default-export': 0,
     'import/no-unresolved': 0,
+    'import/no-dynamic-require': 0,
     'newline-per-chained-call': 1,
     'no-console': 1,
     'no-use-before-define': 0,
