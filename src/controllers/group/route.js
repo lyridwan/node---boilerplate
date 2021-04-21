@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import validate from 'express-validation';
+import { validate } from 'express-validation';
 
 import { authenticate, paginate } from '../../middleware';
 import { Group as groupRepository, Menu as menuRepository } from '../../models';

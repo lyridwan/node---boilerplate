@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "babel-node": "babel-node",
-    "dev": "nodemon --exec npm run babel-node -- ./src/index.js",
+    "dev": "npm run babel-node -- ./src/index.js",
     "test": "mocha --require @babel/register src/**/*.test.js",
     "lint": "eslint ./src/ --ignore-path .eslintignore",
     "lint:fix": "npm run lint -- --fix"
@@ -38,6 +38,7 @@
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0",
+    "socket.io": "^4.0.1",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.0"
   },

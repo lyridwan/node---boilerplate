@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import validate from 'express-validation';
+import { validate } from 'express-validation';
 
 import { authenticate } from '../../middleware';
 import { UserDevice as UserDeviceRepository, User as UserRepository } from '../../models';

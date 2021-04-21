@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import validate from 'express-validation';
+import { validate } from 'express-validation';
 
 import { authenticate } from '../../middleware';
 import { UserProfile as userProfileRepository, User as userRepository } from '../../models';
