@@ -13,7 +13,7 @@ const controller = Controller({ menuRepository, groupRepository });
 
 routes
   .route(basePath)
-  .get(authenticate.jwt, validate(validation.index), paginate, controller.index)
+  .get(paginate, controller.index)
   .post(authenticate.jwt, validate(validation.store), controller.store);
 
 routes

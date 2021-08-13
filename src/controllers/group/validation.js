@@ -1,9 +1,6 @@
 import { Joi } from 'express-validation';
 
 export default {
-  index: {
-    params: {},
-  },
   store: {
     body: Joi.object().keys({
       id: Joi.number(),
